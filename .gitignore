@@ -1,0 +1,70 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing / coverage
+coverage/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# next.js
+.next/
+out/
+
+# production
+build/
+dist/
+
+# env & secrets — never commit real keys
+.env
+.env.*
+!.env.example
+
+# python (auditor engine)
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+
+# logs & local runtime
+*.log
+dev.log
+server.log
+local-*
+
+# OS / editor
+.DS_Store
+*.pem
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# agent / AI coding tooling leftovers
+.claude/
+.z-ai-config
+.zscripts/
+skills/
+
+# scan outputs (use your own --output paths)
+report.json
+report.md
+SECURITY.md
+
+# vercel
+.vercel/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
